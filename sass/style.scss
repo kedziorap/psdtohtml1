@@ -2,6 +2,7 @@
 body{
     font-family: $mainFont;
     font-size: 16px;
+    line-height: 2;
 }
 .container-big {
     max-width: 2000px;
@@ -43,7 +44,44 @@ body{
         }
     }
 }
-
+button.my-btn {
+    background-color: $almostGreen;
+    border: none;
+    text-transform: uppercase;
+    color: $background;
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    &:hover {
+        color: $almostGreen;
+        border: 1px solid $almostGreen;
+    }
+}
+h2 {
+    color: $almostGreen;
+    font-size: 24px;
+    font-family: $boldFont;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+section p {
+    margin: 40px 0;
+}
+.big-photo {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    img {
+        width: auto;
+        transform: translate(-100px,50px)
+    }
+}
+.relative {
+    position: relative;
+}
 
 //header
 header {
@@ -67,20 +105,6 @@ header {
             font-weight: 800;
             font-family: $boldFont;
         }
-        button {
-            background-color: $almostGreen;
-            border: none;
-            text-transform: uppercase;
-            color: $background;
-            padding: 10px 30px;
-            margin-top: 10px;
-            font-size: 14px;
-            font-weight: bold;
-            border-radius: 2px;
-            &:hover {
-                color: $almostGreen;
-            }
-        }
     }
 }
 .icons {
@@ -103,5 +127,10 @@ header {
             color: $almostGreen;
         }
     }
+}
+//second section
+.second {
+    padding: 50px 0;
+    background-color: $backgroundv2;
 }
 @import 'rwd';

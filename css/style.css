@@ -12,7 +12,8 @@
   src: url("../fonts/MyriadPro-BlackSemiCn.otf"); }
 body {
   font-family: "GothamRounded-Book", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 2; }
 
 .container-big {
   max-width: 2000px; }
@@ -49,6 +50,42 @@ body {
       .navbar-nav li a:hover {
         color: grey !important; }
 
+button.my-btn {
+  background-color: #16a085;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px 30px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 2px; }
+  button.my-btn:hover {
+    color: #16a085;
+    border: 1px solid #16a085; }
+
+h2 {
+  color: #16a085;
+  font-size: 24px;
+  font-family: "GothamRounded-Bold", sans-serif;
+  text-transform: uppercase;
+  margin: 50px 0; }
+
+section p {
+  margin: 40px 0; }
+
+.big-photo {
+  position: absolute;
+  bottom: 0;
+  right: 0; }
+  .big-photo img {
+    width: auto;
+    transform: translate(-100px, 50px); }
+
+.relative {
+  position: relative; }
+
 header {
   background: url(../images/Livello_1.png) no-repeat bottom/cover;
   height: 100vh;
@@ -69,18 +106,6 @@ header {
       text-transform: uppercase;
       font-weight: 800;
       font-family: "GothamRounded-Bold", sans-serif; }
-    header .slogan button {
-      background-color: #16a085;
-      border: none;
-      text-transform: uppercase;
-      color: #fff;
-      padding: 10px 30px;
-      margin-top: 10px;
-      font-size: 14px;
-      font-weight: bold;
-      border-radius: 2px; }
-      header .slogan button:hover {
-        color: #16a085; }
 
 .icons {
   color: #fff;
@@ -100,13 +125,30 @@ header {
     .icons .fa:hover {
       color: #16a085; }
 
-@media (max-width: 970px) {
+.second {
+  padding: 50px 0;
+  background-color: #f5f6f7; }
+
+@media (max-width: 1170px) {
+  .big-photo img {
+    width: 100%;
+    transform: translate(0, 50px); } }
+@media (max-width: 992px) {
   .navbar-nav li {
     text-transform: uppercase;
     font-weight: 800;
-    padding: 0 10px; } }
+    padding: 0 10px; }
+
+  .big-photo {
+    position: static; }
+    .big-photo img {
+      width: 100%;
+      transform: translate(0, 50px); } }
 @media (max-width: 768px) {
   .navbar-nav {
-    background-color: black; } }
+    background-color: black; }
+
+  .second {
+    padding: 20px 0; } }
 
 /*# sourceMappingURL=style.css.map */

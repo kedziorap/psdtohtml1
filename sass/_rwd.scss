@@ -1,14 +1,32 @@
-@media(max-width: 970px) {
+@media(max-width:1170px) {
+    .big-photo {
+        img {
+            width: 100%;
+            transform: translate(0,50px);
+        }
+    }
+}
+@media(max-width: 992px) {
     .navbar-nav {
         li {
             text-transform: uppercase;
             font-weight: 800;
             padding: 0 10px;
         }
-    } 
+    }
+    .big-photo {
+        position: static;
+        img {
+            width: 100%;
+            transform: translate(0,50px);
+        }
+    }
 }
 @media(max-width: 768px) {
     .navbar-nav {
         background-color: black;
+    }
+    .second {
+        padding: 20px 0;
     }
 }
