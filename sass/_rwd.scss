@@ -14,13 +14,16 @@
             padding: 0 10px;
         }
     }
-    .big-photo {
+    .big-photo{
         position: static;
         img {
-            width: 100%;
+            max-width: 100%;
+            display: block;
+            height: auto;
             transform: translate(0,50px);
         }
     }
+
 }
 @media(max-width: 768px) {
     .navbar-nav {

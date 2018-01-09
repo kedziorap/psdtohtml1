@@ -25,7 +25,8 @@ body {
   margin-top: 30px;
   padding: 20px;
   background-color: transparent;
-  border: 0; }
+  border: 0;
+  z-index: 999; }
 
 .navbar-brand {
   transform: translateX(-50%);
@@ -75,21 +76,34 @@ h2 {
 section p {
   margin: 40px 0; }
 
-.big-photo {
+.big-photo, .big-photo-left {
   position: absolute;
   bottom: 0;
   right: 0; }
-  .big-photo img {
+  .big-photo img, .big-photo-left img {
     width: auto;
     transform: translate(-100px, 50px); }
+
+.big-photo-left {
+  left: 0;
+  right: auto; }
+  .big-photo-left img {
+    transform: translate(0, 50px); }
 
 .relative {
   position: relative; }
 
+section {
+  padding: 50px 0; }
+
+h3 {
+  font-weight: bolder;
+  text-transform: uppercase; }
+
 header {
   background: url(../images/Livello_1.png) no-repeat bottom/cover;
   height: 100vh;
-  min-height: 400px;
+  min-height: 450px;
   max-height: 950px;
   overflow: hidden;
   position: relative; }
@@ -126,11 +140,44 @@ header {
       color: #16a085; }
 
 .second {
-  padding: 50px 0;
   background-color: #f5f6f7; }
 
+.community {
+  background-color: #f5f6f7;
+  line-height: 1.4; }
+  .community h3 {
+    text-transform: uppercase;
+    margin: 15px 0; }
+  .community .header-div {
+    text-align: center; }
+  .community p {
+    margin-top: 0; }
+
+.form-sec {
+  height: 100vh;
+  max-height: 600px;
+  min-height: 250px;
+  background: #16a085 url(../images/Livello_3.png) no-repeat center fixed/cover; }
+  .form-sec h3 {
+    color: #f5f6f7; }
+  .form-sec .submit {
+    background-color: #16a085 !important;
+    border: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0; }
+  .form-sec input {
+    padding: 20px;
+    border: 0; }
+  .form-sec .myform {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
 @media (max-width: 1170px) {
-  .big-photo img {
+  .big-photo img, .big-photo-left img {
     width: 100%;
     transform: translate(0, 50px); } }
 @media (max-width: 992px) {
@@ -139,10 +186,12 @@ header {
     font-weight: 800;
     padding: 0 10px; }
 
-  .big-photo {
+  .big-photo, .big-photo-left {
     position: static; }
-    .big-photo img {
-      width: 100%;
+    .big-photo img, .big-photo-left img {
+      max-width: 100%;
+      display: block;
+      height: auto;
       transform: translate(0, 50px); } }
 @media (max-width: 768px) {
   .navbar-nav {

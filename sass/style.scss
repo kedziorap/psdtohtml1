@@ -16,6 +16,7 @@ body{
     padding: 20px;
     background-color: transparent;
     border: 0;
+    z-index: 999;
 }
 .navbar-brand {
     transform: translateX(-50%);
@@ -79,15 +80,30 @@ section p {
         transform: translate(-100px,50px)
     }
 }
+.big-photo-left {
+    @extend .big-photo;
+    left: 0;
+    right: auto;
+    img {
+        transform: translate(0, 50px);
+    }
+}
 .relative {
     position: relative;
+}
+section {
+    padding: 50px 0;
+}
+h3 {
+    font-weight: bolder;
+    text-transform: uppercase;
 }
 
 //header
 header {
     background: url(../images/Livello_1.png) no-repeat bottom /cover;
     height: 100vh;
-    min-height: 400px;
+    min-height: 450px;
     max-height: 950px;
     overflow: hidden;
     position: relative;
@@ -130,7 +146,47 @@ header {
 }
 //second section
 .second {
-    padding: 50px 0;
     background-color: $backgroundv2;
+}
+.community {
+    background-color: $backgroundv2;
+    line-height: 1.4;
+    h3 {
+        text-transform: uppercase;
+        margin: 15px 0;
+    }
+    .header-div {
+        text-align: center;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+.form-sec {
+    height: 100vh;
+    max-height: 600px;
+    min-height: 250px;
+    background: $almostGreen url(../images/Livello_3.png) no-repeat center fixed /cover;
+    h3 {
+        color: $backgroundv2;
+    }
+    .submit {
+        background-color: $almostGreen !important;
+        border: 0;
+        padding: 10px 20px;
+        color: $background;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+    input {
+        padding: 20px;
+        border: 0;
+    }
+    .myform {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
 }
 @import 'rwd';
