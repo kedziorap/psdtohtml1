@@ -1,0 +1,112 @@
+@font-face {
+  font-family: 'GothamRounded-Book';
+  src: url("../fonts/GothamRounded-Book.otf"); }
+@font-face {
+  font-family: 'GothamRounded-Bold';
+  src: url("../fonts/GothamRounded-Bold.otf"); }
+@font-face {
+  font-family: 'GothamRounded-Medium';
+  src: url("../fonts/GothamRounded-Medium.otf"); }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url("../fonts/MyriadPro-BlackSemiCn.otf"); }
+body {
+  font-family: "GothamRounded-Book", sans-serif;
+  font-size: 16px; }
+
+.container-big {
+  max-width: 2000px; }
+
+.container {
+  max-width: 1050px; }
+
+.navbar {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: transparent;
+  border: 0; }
+
+.navbar-brand {
+  transform: translateX(-50%);
+  left: 50%;
+  top: 15px;
+  position: absolute;
+  padding: 0px; }
+  .navbar-brand img {
+    height: auto;
+    width: 100%;
+    padding: 0; }
+
+.navbar-nav {
+  margin: 0;
+  text-align: center; }
+  .navbar-nav li {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0 30px; }
+    .navbar-nav li a {
+      color: #fff !important; }
+      .navbar-nav li a:hover {
+        color: grey !important; }
+
+header {
+  background: url(../images/Livello_1.png) no-repeat bottom/cover;
+  height: 100vh;
+  min-height: 400px;
+  max-height: 950px;
+  overflow: hidden;
+  position: relative; }
+  header .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    letter-spacing: 1px;
+    word-spacing: 4px; }
+    header .slogan h1 {
+      text-transform: uppercase;
+      font-weight: 800;
+      font-family: "GothamRounded-Bold", sans-serif; }
+    header .slogan button {
+      background-color: #16a085;
+      border: none;
+      text-transform: uppercase;
+      color: #fff;
+      padding: 10px 30px;
+      margin-top: 10px;
+      font-size: 14px;
+      font-weight: bold;
+      border-radius: 2px; }
+      header .slogan button:hover {
+        color: #16a085; }
+
+.icons {
+  color: #fff;
+  position: absolute;
+  font-size: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  margin-bottom: 20px; }
+  .icons .fa {
+    margin-left: 10px;
+    cursor: pointer;
+    transition: color 0.2s; }
+    .icons .fa:first-of-type {
+      margin-left: 0; }
+    .icons .fa:hover {
+      color: #16a085; }
+
+@media (max-width: 970px) {
+  .navbar-nav li {
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 0 10px; } }
+@media (max-width: 768px) {
+  .navbar-nav {
+    background-color: black; } }
+
+/*# sourceMappingURL=style.css.map */

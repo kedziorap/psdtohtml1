@@ -1,0 +1,107 @@
+@import 'variable'; 
+body{
+    font-family: $mainFont;
+    font-size: 16px;
+}
+.container-big {
+    max-width: 2000px;
+}
+.container {
+    max-width: 1050px;
+}
+//menu edit
+.navbar {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: transparent;
+    border: 0;
+}
+.navbar-brand {
+    transform: translateX(-50%);
+    left: 50%;
+    top: 15px;
+    position: absolute;
+    padding: 0px;
+    img {
+        height: auto;
+        width: 100%;
+        padding: 0;
+    }
+}
+.navbar-nav {
+    margin: 0;
+    text-align: center;
+    li {
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: 0 30px;
+        a {
+            color: $background !important;
+            &:hover {
+                color: grey !important;
+            }
+        }
+    }
+}
+
+
+//header
+header {
+    background: url(../images/Livello_1.png) no-repeat bottom /cover;
+    height: 100vh;
+    min-height: 400px;
+    max-height: 950px;
+    overflow: hidden;
+    position: relative;
+    .slogan {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $background;
+        letter-spacing: 1px;
+        word-spacing: 4px;
+        h1 {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-family: $boldFont;
+        }
+        button {
+            background-color: $almostGreen;
+            border: none;
+            text-transform: uppercase;
+            color: $background;
+            padding: 10px 30px;
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 2px;
+            &:hover {
+                color: $almostGreen;
+            }
+        }
+    }
+}
+.icons {
+    color: $background;
+    position: absolute;
+    font-size: 30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    margin-bottom: 20px;
+    .fa {
+        margin-left: 10px;
+        cursor: pointer;
+        transition: color 0.2s;
+        &:first-of-type {
+            margin-left: 0;
+        }
+        &:hover {
+            color: $almostGreen;
+        }
+    }
+}
+@import 'rwd';

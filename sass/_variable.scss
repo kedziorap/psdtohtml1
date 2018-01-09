@@ -1,0 +1,23 @@
+//FONTS IMPORT
+@font-face {
+    font-family: 'GothamRounded-Book';
+    src: url('../fonts/GothamRounded-Book.otf');
+}
+@font-face {
+    font-family: 'GothamRounded-Bold';
+    src: url('../fonts/GothamRounded-Bold.otf');
+}
+@font-face {
+    font-family: 'GothamRounded-Medium';
+    src: url('../fonts/GothamRounded-Medium.otf');
+}
+@font-face {
+    font-family: 'Myriad Pro';
+    src: url('../fonts/MyriadPro-BlackSemiCn.otf');
+}
+$almostGreen: #16a085;
+$background: #fff;
+$backgroundv2: #f5f6f7;
+$mainFont: 'GothamRounded-Book', sans-serif;
+$secondFont: 'Myriad Pro', sans-serif;
+$boldFont: 'GothamRounded-Bold', sans-serif;
