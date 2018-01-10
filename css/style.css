@@ -235,23 +235,33 @@ footer {
   footer .logo-bottom {
     text-align: right; }
 
-.carousel {
+#carousel {
   margin: 0 auto;
-  overflow: hidden; }
-  .carousel ul {
+  overflow: hidden;
+  max-width: 760px;
+  max-height: 274px; }
+  #carousel ul {
     margin: 0;
     padding: 0;
     width: 2000px; }
-    .carousel ul li {
+    #carousel ul li {
       list-style-type: none;
       float: left; }
-      .carousel ul li img {
+      #carousel ul li img {
         width: 100%;
-        padding: 10px; }
+        padding: 5px; }
 
-@media (max-width: 1200px) {
-  .carousel img {
-    width: 30%; } }
+.controls {
+  cursor: pointer;
+  margin: 0 5px;
+  padding: 0 5px; }
+
+.controls-group span {
+  position: absolute;
+  top: -20px; }
+  .controls-group span:last-of-type {
+    left: 40px; }
+
 @media (max-width: 1170px) {
   .big-photo img, .big-photo-left img {
     width: 100%;

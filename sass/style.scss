@@ -260,9 +260,11 @@ footer {
     }
     
 }
-.carousel {
+#carousel {
     margin: 0 auto;
     overflow: hidden;
+    max-width: 760px;
+    max-height: 274px;
     ul {
         margin: 0;
         padding: 0;
@@ -272,8 +274,22 @@ footer {
             float: left;
             img {
                 width: 100%;
-                padding: 10px;
+                padding: 5px;
             }
+        }
+    }
+}
+.controls {
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0 5px;
+}
+.controls-group {
+    span {
+        position: absolute;
+        top: -20px;
+        &:last-of-type {
+            left: 40px;
         }
     }
 }
