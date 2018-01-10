@@ -1,3 +1,10 @@
+@media(max-width:1200px) {
+    .carousel {
+        img {
+            width: 30%;
+        }
+    }
+}
 @media(max-width:1170px) {
     .big-photo {
         img {
@@ -37,5 +44,19 @@
     }
     .left, .right {
         float:none;
+    }
+    footer {
+        text-align: center;
+        .logo-bottom {
+            text-align: center;
+        }
+        .list-inline {
+            li {
+                display: block;
+                &::after {
+                    content: "";
+                }
+            }
+        }
     }
 }

@@ -163,7 +163,7 @@ header {
 
 .form-sec {
   height: 100vh;
-  max-height: 600px;
+  max-height: 900px;
   min-height: 250px;
   background: #16a085 url(../images/Livello_3.png) no-repeat center 0/cover fixed; }
   .form-sec h3 {
@@ -186,16 +186,72 @@ header {
 
 .download {
   text-align: center;
-  background-color: #f5f6f7; }
+  background-color: #f5f6f7;
+  padding-bottom: 70px; }
   .download h2 {
     color: black;
     margin-bottom: 10px; }
   .download p {
     text-transform: uppercase; }
+  .download .app-btn {
+    width: 290px;
+    text-align: left;
+    padding: 10px 0 10px 20px;
+    position: relative;
+    background-color: #16a085;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: 0.2s background-color;
+    margin: 10px; }
+    .download .app-btn:hover {
+      background-color: #2b7163;
+      color: #f5f6f7; }
+    .download .app-btn .fa {
+      position: absolute;
+      right: 0;
+      top: 0;
+      line-height: 40px;
+      width: 45px;
+      height: 100%;
+      background-color: #2b7163;
+      color: #fff;
+      padding-left: 11px;
+      font-size: 30px; }
 
 footer {
   padding: 30px 0 10px; }
 
+footer {
+  padding: 40px 0; }
+  footer .menu-bottom li::after {
+    content: "|";
+    margin-left: 10px;
+    color: #16a085; }
+  footer .menu-bottom li:last-of-type::after {
+    content: ''; }
+  footer .menu-bottom a {
+    color: black; }
+  footer .logo-bottom {
+    text-align: right; }
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden; }
+  .carousel ul {
+    margin: 0;
+    padding: 0;
+    width: 2000px; }
+    .carousel ul li {
+      list-style-type: none;
+      float: left; }
+      .carousel ul li img {
+        width: 100%;
+        padding: 10px; }
+
+@media (max-width: 1200px) {
+  .carousel img {
+    width: 30%; } }
 @media (max-width: 1170px) {
   .big-photo img, .big-photo-left img {
     width: 100%;
@@ -224,6 +280,15 @@ footer {
     transform: translate(0, 20px); }
 
   .left, .right {
-    float: none; } }
+    float: none; }
+
+  footer {
+    text-align: center; }
+    footer .logo-bottom {
+      text-align: center; }
+    footer .list-inline li {
+      display: block; }
+      footer .list-inline li::after {
+        content: ""; } }
 
 /*# sourceMappingURL=style.css.map */
