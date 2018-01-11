@@ -46,15 +46,6 @@ $(function() {
     //DESIGN CAROUSEL
     var car = $('#designCarousel');
     var carDiv = $('#designCarousel div');
-   /* for (var i = 1; i < carDiv.length; i++) {
-        carDiv[i].css({
-            display: 'none'
-        })
-        var thisDiv =carDiv[i];
-        $(thisDiv).css({
-            display: 'none'
-        });
-    }*/
     setCarosuelPosition();
     function setCarosuelPosition() {
         var przesun = $('.third').height() - $('#designCarousel').height();
@@ -79,10 +70,31 @@ $(function() {
             .fadeIn(1000)
             .end()
             .appendTo('#designCarousel');
+        number++;
+        checkNumber();
     });
     $('#d-left-change').click(function() {
         $('#designCarousel div:first').fadeOut(1000);
         $('#designCarousel div:last').fadeIn()
         .prependTo('#designCarousel');
+        number--;
+        checkNumber();
     });
+    var amount = $('#designCarousel div').length;
+    var number = 1;
+    $('#countAll').text('0'+amount);
+    function checkNumber() {
+        if (number <= amount && number>0) {
+            setNumber(number);
+        } else if (number>5){
+            number = 1;
+            setNumber(number);
+        } else {
+            number = 5;
+            setNumber(number);
+        }
+    }
+    function setNumber(nr) {
+        $('#countAct').text('0'+nr);
+    }
 });
