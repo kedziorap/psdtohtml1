@@ -275,7 +275,10 @@ footer {
     left: 0;
     right: 0;
     height: 100%;
-    transform: translate(0, 0px); }
+    transform: translate(0, 0px);
+    display: none; }
+    #designCarousel div:first-of-type {
+      display: block; }
   #designCarousel img {
     max-width: 100%; }
 

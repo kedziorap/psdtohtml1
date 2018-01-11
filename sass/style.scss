@@ -307,6 +307,10 @@ footer {
         right: 0;
         height: 100%;
         transform: translate(0, 0px);
+        display: none;
+        &:first-of-type {
+            display: block;
+        }
     }
     img {
         max-width: 100%;

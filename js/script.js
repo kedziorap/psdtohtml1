@@ -46,6 +46,15 @@ $(function() {
     //DESIGN CAROUSEL
     var car = $('#designCarousel');
     var carDiv = $('#designCarousel div');
+   /* for (var i = 1; i < carDiv.length; i++) {
+        carDiv[i].css({
+            display: 'none'
+        })
+        var thisDiv =carDiv[i];
+        $(thisDiv).css({
+            display: 'none'
+        });
+    }*/
     setCarosuelPosition();
     function setCarosuelPosition() {
         var przesun = $('.third').height() - $('#designCarousel').height();
@@ -62,8 +71,18 @@ $(function() {
         }
     }
     $(window).resize(function(){
-        //console.log($('.third').height()); 
-        //console.log('design: '+$('#designCarousel').height()); 
         setCarosuelPosition();
+    });
+    $('#d-right-change').click(function() {
+        $('#designCarousel div:first').fadeOut()
+            .next()
+            .fadeIn(1000)
+            .end()
+            .appendTo('#designCarousel');
+    });
+    $('#d-left-change').click(function() {
+        $('#designCarousel div:first').fadeOut(1000);
+        $('#designCarousel div:last').fadeIn()
+        .prependTo('#designCarousel');
     });
 });
