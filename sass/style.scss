@@ -209,7 +209,7 @@ header {
         text-transform: uppercase;
     }
     .app-btn {
-        width: 290px;
+        min-width: 220px;
         text-align: left;
         padding: 10px 0 10px 20px;
         position: relative;
@@ -292,5 +292,27 @@ footer {
             left: 40px;
         }
     }
+}
+.cube {
+    min-height: 414px;
+}
+#designCarousel {
+    text-align: center;
+    min-height: 412px;
+    overflow: hidden;
+    position: relative;
+    div {
+        position: absolute;
+        left: 0;
+        right: 0;
+        height: 100%;
+        transform: translate(0, 0px);
+    }
+    img {
+        max-width: 100%;
+    }
+}
+#counter {
+    margin: 5px 0;
 }
 @import 'rwd';

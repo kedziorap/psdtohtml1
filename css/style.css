@@ -194,7 +194,7 @@ header {
   .download p {
     text-transform: uppercase; }
   .download .app-btn {
-    width: 290px;
+    min-width: 220px;
     text-align: left;
     padding: 10px 0 10px 20px;
     position: relative;
@@ -261,6 +261,26 @@ footer {
   top: -20px; }
   .controls-group span:last-of-type {
     left: 40px; }
+
+.cube {
+  min-height: 414px; }
+
+#designCarousel {
+  text-align: center;
+  min-height: 412px;
+  overflow: hidden;
+  position: relative; }
+  #designCarousel div {
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 100%;
+    transform: translate(0, 0px); }
+  #designCarousel img {
+    max-width: 100%; }
+
+#counter {
+  margin: 5px 0; }
 
 @media (max-width: 1170px) {
   .big-photo img, .big-photo-left img {
