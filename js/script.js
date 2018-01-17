@@ -20,7 +20,7 @@ $(function() {
         last.after(first,second);
         liCarousel.css({
             marginLeft: 0
-        })
+        });
     }
     function changeSlideBack() {
         if (!(liCarousel.is(':animated'))) {
@@ -36,7 +36,7 @@ $(function() {
         first.before(beforeLast,last);
         liCarousel.css({
             marginLeft: -carousel.width()
-        })
+        });
     }
     $('#right-change').click(changeSlide);
     $('#left-change').click(changeSlideBack);
@@ -54,11 +54,11 @@ $(function() {
                 transform: 'translate(0, '+(przesun+50)+'px)',
                 '-webkit-transform': 'translate(0, '+(przesun+50)+'px)',
                 '-ms-transform': 'translate(0, '+(przesun+50)+'px)'
-            })
+            });
         } else {
             car.css({
                 transform: 'translate(0, 0)'
-            })
+            });
         }
     }
     $(window).resize(function(){
@@ -97,4 +97,17 @@ $(function() {
     function setNumber(nr) {
         $('#countAct').text('0'+nr);
     }
+    //fixed navbar
+    var nav = $('header nav');
+    var windowWidth = $(window).width();
+    $(window).scroll(function() {
+
+        if (windowWidth > 768) {
+            if ($(this).scrollTop() > 250) {
+                nav.addClass('navbar-fixed-top');
+            } else {
+                nav.removeClass('navbar-fixed-top');
+            }
+        }
+    });
 });
